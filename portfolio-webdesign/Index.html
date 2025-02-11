@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags e collegamenti ai fogli di stile -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Portfolio</title>
+</head>
+
+<body class="poppins d-flex flex-column min-vh-100" style="background-color: #CBECFB;">
+    <!--NAVBAR-->
+    <header>
+        <div class="container mb-5">
+            <!-- Creo una navbar con logo e menu che non collassa (definito tramite la classe navbar-expand) e con bordo inferiore -->
+            <nav class="navbar navbar-expand fixed-top border-bottom border-2 border-dark-subtle"
+                style="background-color: #CBECFB;">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/portfolio.png" alt="logo" width="120" height="50">
+                    </a>
+                </div>
+                <div>
+                    <ul class="navbar-nav"> <!--struttura bottoni-->
+                        <li class="nav-item">
+                            <a class="nav-link text-highlight " href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <!-- Creo un menu a tendina per i progetti -->
+                            <a class="nav-link dropdown-toggle text-highlight" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                Progetti
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-right"><!--direzione dorpdown-->
+                                <li><a class="dropdown-item text-wrap text-center" href="dnd.html">
+                                    <span class="text-highlight">Dungeons and Dragons characters designs</span></a></li>
+                                <li><a class="dropdown-item" href="progettilayout.html">
+                                    <span class="text-highlight">Progetti Layout</span></a></li>
+                                <li><a class="dropdown-item" href="lyricsanimation.html">
+                                    <span class="text-highlight">Lyrics animation</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-highlight" href="contatti.html">Contatti</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container mt-5">
+            <!-- Immagine del profilo -->
+            <div class="container d-block m-auto text-center">
+                <img src="assets/MMS 1.png" class="img-fluid" alt="profilepic">
+            </div>
+            <!-- Testo dipresentazione -->
+            <div class="container text-center mt-4">
+                <div class="fs-1">
+                    <span class="text-highlight">Hello </span><span>there!</span>
+                </div>
+                <p class="m-auto fs-6 poppins-regular text-center">
+                    Ciao! Sono Marta Musarra, una studentessa dell’Accademia di Belle Arti di Catania e frequento il
+                    corso di Nuove Tecnologie Dell’Arte. Il mio obbiettivo è quello di lavorare come character designer
+                    nell’industria del gaming. Lavoro con molti programmi tra i quali la suite Adobe per i miei lavori
+                    legati alla grafica, mentre utilizzo il software Clip Studio Paint per i miei lavori di disegno
+                    digitale.
+                </p>
+            </div>
+            <!-- skills -->
+            <div class="container d-flex flex-column mt-5">
+                <div class="m-auto bg-white px-4 pe-3 pt-2 pb-3 rounded-2 bg-success p-2" style="--bs-bg-opacity: .7;">
+                    <span>Skills</span>
+                    <div>
+                        <!-- Creo una lista orizzontale delle competenze con icone -->
+                        <ul class="gap-1 justify-content-center list-group list-group-horizontal">
+                            <li class="list-group-item p-0 border-0" style="background-color: transparent;">
+                                <img src="assets/adobe_illustrator.svg" alt="Illustrator" width="40" height="40">
+                            </li>
+                            <li class="list-group-item p-0 border-0" style="background-color: transparent;">
+                                <img src="assets/adobe_after_effects.svg" alt="After effetc" width="40" height="40">
+                            </li>
+                            <li class="list-group-item p-0 border-0" style="background-color: transparent;">
+                                <img src="assets/adobe_photoshop.svg" alt="Photoshop" width="40" height="40">
+                            </li>
+                            <li class="list-group-item p-0 border-0" style="background-color: transparent;">
+                                <img src="assets/adobe_indesign.svg" alt="Indesign" width="40" height="40">
+                            </li>
+                            <li class="list-group-item p-0 border-0" style="background-color: transparent;">
+                                <img src="assets/adobe_premiere.svg" alt="Premiere" width="40" height="40">
+                            </li>
+                            <li class="list-group-item p-0 border-0" style="background-color: transparent;">
+                                <img src="assets/figma.svg" alt="Figma" width="40" height="40">
+                            </li>
+                            <li class="list-group-item p-0 border-0" style="background-color: transparent;">
+                                <img src="assets/vs_code.svg" alt="VScode" width="40" height="40">
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Sezione dei progetti -->
+            <div class="container mt-5 mb-5">
+                <div class="text-center m-auto d-flex flex-column gap-5">
+                    <div>
+                        <span>Dai un'occhiata ai miei </span><span class="text-highlight">progetti!</span>
+                    </div>
+                    <a href="dnd.html"
+                        class=" m-auto text-center rounded-2 project-button link-underline link-underline-opacity-0 link-underline-opacity-0-hover p-4">
+                        Dungeons and Dragons characters designs
+                    </a>
+                    <a href="progettilayout.html"
+                        class=" m-auto text-center rounded-2 project-button link-underline link-underline-opacity-0 link-underline-opacity-0-hover p-4">
+                        Progetti Layout
+                    </a>
+                    <a href="lyricsanimation.html"
+                        class=" m-auto text-center rounded-2 project-button link-underline link-underline-opacity-0 link-underline-opacity-0-hover p-4">
+                        Lyrics animation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer con logo e copyright -->
+    <footer class="mt-auto mb-auto">
+        <div class="container d-flex flex-column text-center gap-2 mb-4 ">
+            <hr class="solid divider mt-5 border-3 border-dark-subtle"> <!--linea divisoria-->
+            <div class="container">
+                <img src="assets/portfolio.png" alt="logo" width="120" height="50">
+            </div>
+            <span class="poppins-regular">Copyright© 2024 Marta Musarra</span>
+        </div>
+    </footer>
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

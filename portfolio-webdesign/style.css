@@ -1,0 +1,41 @@
+.poppins {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-italic {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: smaller;
+}
+
+.text-highlight {
+    color: #0080D0 !important;
+}
+.nav-link:hover {
+    color:#0E69AC !important;
+
+}
+
+.divider {
+    opacity: 100%;
+    border-radius: 10%;
+}
+
+.project-button {
+    background-color: #88C5E1 !important;
+    color: #0E69AC !important;
+    width: 260px;
+}
+.project-button:hover {
+    background-color: #69BCE1 !important;
+}
+
